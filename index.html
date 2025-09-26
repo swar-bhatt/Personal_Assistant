@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Swar Bhatt — Portfolio | CS & AI Student</title>
+  <style>
+    :root{ --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#6ee7b7; --glass: rgba(255,255,255,0.03);} 
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:linear-gradient(180deg,#071023 0%, #0b1220 100%); color:#e6eef6; -webkit-font-smoothing:antialiased}
+    .container{max-width:1000px;margin:40px auto;padding:24px}
+    header{display:flex;gap:16px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,#0ea5a4,#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:30px;color:#041124;box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+    h1{margin:0;font-size:26px}
+    p.lead{color:var(--muted);margin:6px 0 0}
+    .top-row{display:flex;justify-content:space-between;align-items:flex-start;margin-top:18px;gap:20px}
+    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 20px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    .left{flex:1;min-width:260px}
+    .right{width:360px}
+    section{margin-top:18px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .chip{background:var(--glass);padding:8px 10px;border-radius:999px;color:var(--muted);font-weight:600;font-size:13px}
+    .stat-grid{display:flex;gap:12px;margin-top:12px}
+    .stat{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:12px;border-radius:10px;flex:1;text-align:center}
+    .experience-item{border-left:3px solid rgba(255,255,255,0.04);padding:12px;margin-bottom:10px}
+    .project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .project{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02))}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#34d399);color:#022; font-weight:700;text-decoration:none}
+    footer{margin-top:26px;color:var(--muted);text-align:center;font-size:13px}
+    @media (max-width:880px){.top-row{flex-direction:column}.right{width:100%}.project-grid{grid-template-columns:1fr}}
+    /* small interactions */
+    .card:hover{transform:translateY(-3px);transition:transform .18s ease}
+    a.link{color:var(--accent);text-decoration:none}
+    .contact-form input,.contact-form textarea{width:100%;padding:10px;margin-top:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">SB</div>
+      <div>
+        <h1>Swar Bhatt — Computer Science & AI Student</h1>
+        <p class="lead">Enthusiastic CS & AI student focused on building intelligent agents and extracting actionable insights from data. Experienced through internships across startups and research teams.</p>
+      </div>
+      <div style="margin-left:auto; text-align:right">
+        <div style="font-size:13px;color:var(--muted)">Location</div>
+        <div style="font-weight:700">Bengaluru, India</div>
+      </div>
+    </header>
+
+    <div class="top-row">
+      <div class="left card">
+        <section>
+          <h2>About</h2>
+          <p style="color:var(--muted)">I am pursuing a Bachelor's in Computer Science with a specialization in Artificial Intelligence. My core strengths are designing AI agents that interact, learn, and solve tasks autonomously, and performing end-to-end data analysis pipelines to inform decisions.</p>
+          <div class="skills">
+            <span class="chip">AI Agents</span>
+            <span class="chip">Data Analysis</span>
+            <span class="chip">Machine Learning</span>
+            <span class="chip">Deep Learning</span>
+            <span class="chip">Python</span>
+            <span class="chip">TensorFlow</span>
+            <span class="chip">PyTorch</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Git</span>
+          </div>
+        </section>
+
+        <section>
+          <h2>Experience</h2>
+
+          <div class="experience-item">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <strong>AI Intern — TechNova Labs</strong>
+              <span style="color:var(--muted);font-size:13px">Jun 2024 — Aug 2024</span>
+            </div>
+            <div style="color:var(--muted);margin-top:6px;font-size:14px">Worked on developing reinforcement-learning based agents to automate resource allocation in simulated environments. Built training pipelines and ran experiments at scale.</div>
+            <ul style="margin:8px 0 0 18px;color:var(--muted)">
+              <li>Designed and trained RL agents using Stable-Baselines3 and custom reward shaping.</li>
+              <li>Implemented logging, checkpointing and evaluation dashboards.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <strong>Data Analyst Intern — DataForge Analytics</strong>
+              <span style="color:var(--muted);font-size:13px">Jan 2024 — Apr 2024</span>
+            </div>
+            <div style="color:var(--muted);margin-top:6px;font-size:14px">Performed exploratory data analysis and built predictive models for customer churn and lifetime value. Communicated results to stakeholders via dashboards.</div>
+            <ul style="margin:8px 0 0 18px;color:var(--muted)">
+              <li>Built ETL pipelines to clean and aggregate transaction data.</li>
+              <li>Deployed models as REST endpoints for integration with internal dashboards.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <strong>ML Research Intern — AIX Solutions</strong>
+              <span style="color:var(--muted);font-size:13px">Jun 2023 — Dec 2023</span>
+            </div>
+            <div style="color:var(--muted);margin-top:6px;font-size:14px">Explored novel architectures for memory-augmented agents and contributed to codebase for experiments and reproducible research.</div>
+            <ul style="margin:8px 0 0 18px;color:var(--muted)">
+              <li>Implemented attention-based memory modules to improve agent performance on long-horizon tasks.</li>
+              <li>Authored internal documentation and experimental reports.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>Projects</h2>
+          <div class="project-grid">
+            <div class="project">
+              <strong>Autonomous Campus Delivery Agent</strong>
+              <div style="color:var(--muted);margin-top:6px">A simulated multi-agent system to coordinate delivery robots across a campus map. Used multi-agent RL and prioritized task allocation.</div>
+              <div style="margin-top:8px"><a class="link" href="#">View code</a> • <a class="link" href="#">Live demo</a></div>
+            </div>
+            <div class="project">
+              <strong>Churn Prediction Pipeline</strong>
+              <div style="color:var(--muted);margin-top:6px">End-to-end pipeline for customer churn prediction: feature engineering, model training, and deployment as an API integrated into dashboards.</div>
+              <div style="margin-top:8px"><a class="link" href="#">View code</a> • <a class="link" href="#">Report</a></div>
+            </div>
+            <div class="project">
+              <strong>RL Research: Memory-Augmented Agents</strong>
+              <div style="color:var(--muted);margin-top:6px">Experimentation with memory modules that help agents remember long-term dependencies — includes reproducible notebooks and experiments.</div>
+              <div style="margin-top:8px"><a class="link" href="#">Notebook</a> • <a class="link" href="#">Paper summary</a></div>
+            </div>
+            <div class="project">
+              <strong>Data Dashboard for Sales Insights</strong>
+              <div style="color:var(--muted);margin-top:6px">Interactive dashboards showing cohort analysis, funnels, and LTV, built with a Python backend and a lightweight frontend.</div>
+              <div style="margin-top:8px"><a class="link" href="#">Dashboard</a> • <a class="link" href="#">Source</a></div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <aside class="right card">
+        <section>
+          <h3>Quick Stats</h3>
+          <div class="stat-grid">
+            <div class="stat"><div style="font-size:18px;font-weight:700">3</div><div style="color:var(--muted);font-size:13px">Internships</div></div>
+            <div class="stat"><div style="font-size:18px;font-weight:700">5+</div><div style="color:var(--muted);font-size:13px">Projects</div></div>
+            <div class="stat"><div style="font-size:18px;font-weight:700">4.0</div><div style="color:var(--muted);font-size:13px">GPA (example)</div></div>
+          </div>
+        </section>
+
+        <section style="margin-top:12px">
+          <h3>Contact</h3>
+          <div style="color:var(--muted);font-size:14px">Email</div>
+          <div style="font-weight:700">swar.bhatt@example.com</div>
+          <div style="color:var(--muted);font-size:14px;margin-top:8px">LinkedIn</div>
+          <a class="link" href="#">linkedin.com/in/swar-bhatt</a>
+
+          <div style="margin-top:12px">
+            <a class="btn" href="#">Download Resume</a>
+          </div>
+        </section>
+
+        <section style="margin-top:14px">
+          <h3>Get in touch</h3>
+          <form class="contact-form" onsubmit="alert('This is a demo form. Replace action with your backend.'); return false;">
+            <input type="text" placeholder="Your name" required />
+            <input type="email" placeholder="Your email" required />
+            <textarea rows="3" placeholder="Message"></textarea>
+            <div style="margin-top:8px"><button class="btn" type="submit">Send</button></div>
+          </form>
+        </section>
+      </aside>
+    </div>
+
+    <footer>
+      Built with ❤️ • Student of Computer Science & Artificial Intelligence — Available for internships & collaborations
+    </footer>
+  </div>
+</body>
+</html>
